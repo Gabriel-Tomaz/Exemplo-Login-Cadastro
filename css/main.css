@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: center;
+}
+.esquerda{
+    width: 35%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.direita{
+    width: 35%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_esquerda{
+    width: 65%;
+    height: 100vh;
+    display: none;
+    order: 3;
+    background-image: url(../img/agustin-diaz-7F65HDP0-E0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img_direita{
+    width: 65%;
+    height: 100vh;
+    background-image: url(../img/pavel-brodsky-ChVxCLvYEhc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*Tela de login*/
+.tela_login{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 72%;
+    height: 500px;
+    background-color: white;
+    border-radius: 3px;     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.login h1{
+    text-align: center;
+    order: 1;
+    width: 100%;
+}
+.linha{
+    width: 220px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #0f7ef1;
+    order: 2;
+    margin: 30px auto;
+}
+.campos{
+    order: 3;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.campos input{
+    width: 90%;
+    height: 46px;
+    padding: 0 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+}
+.campos input:focus{
+    border-color:#0f7ef1;
+}
+.bt_login{
+    width: 80%;
+    height: 42px;
+    text-align: center;
+    background-color: #0f7ef1;
+    color: white;
+    border-radius: 3px;
+    order: 4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+/*tela de cadastro*/
+.tela_cadastro{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro{
+    width: 85%;
+    height: 550px;
+    background-color: white;
+    border-radius: 3px;     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}.linha_cad{
+    background-color: #399E5A;
+}
+.campos_cadastro{
+    order: 3;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: center;
+}
+.campos_cadastro input{
+    width: 50px;
+    height: 38px;
+    padding: 0 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+}
+.campos_cadastro input:focus{
+    border-color: #399E5A;
+}
+.nome{
+    width:40% !important;
+    margin: 4px;
+}
+.snome{
+    width:40% !important;
+}
+.user{
+    width: 50% !important;
+
+}
+.senha{
+    width: 39% !important;
+    margin: 2px;
+}
+.tel{
+    width: 15% !important;
+}
+.regiao{
+    width: 10% !important;
+    margin: 8px;
+}
+.telefone{
+    width: 48% !important;
+}
+.cadastro h1{
+    text-align: center;
+    order: 1;
+    width: 100%;
+    font-size: 26px;
+}
+.cadastro h3{
+    width: 35%;
+    height: 38px;
+    position: relative;
+    top: 10%;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: none;
+    margin: 3px;
+}
+.aviso{
+    width: 92%;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: none;
+    margin: 4px;
+    text-align: left;   
+}
+.bt_cadastrar{
+    width: 39%;
+    height: 40px;
+    background-color: #399E5A;
+    color: white;
+    border-radius: 3px;
+    order: 4;
+    cursor: pointer;
+}
+.bt_cadastrar h3{
+    width: 100%;
+    font-size: 15px;
+    position: relative;
+    top: 15%;
+    text-align: center;
+}
+.bt_login_cad{
+    width: 40%;
+    height: 42px;
+    color: #399E5A;
+    border-radius: 3px;
+    order: 4;
+    cursor: pointer;
+}
+.bt_login_cad h3{
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+@media all and (min-width: 1px) and (max-width: 768px){
+    .esquerda{
+        width: 100%;
+        background-color: rgb(33,33,33,0);
+        z-index: 2;
+    }
+    .tela_login{
+        width: 100%;
+        height: 400px;
+        z-index: 3;
+    }
+    .login{
+        color: white;
+        width: 90%;
+        height: 380px;
+        background-color: rgb(33,33,33,0.9);
+        border-radius: 4px;
+    }
+    .campos{
+        height: 150px;
+    }
+    .img_direita{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    /*Tela de cadastro Responsiva*/
+
+    .direita{
+        width: 100%;
+        background-color: rgb(33,33,33,0);
+        z-index: 2;
+    }
+    .tela_cadastro{
+        width: 100%;
+        height: 100vh;
+        z-index: 3;
+    }
+    .cadastro{
+        color: white;
+        width: 90%;
+        height: 90vh;
+        background-color: rgb(33,33,33,0.9);
+        border-radius: 4px;
+    }
+    .img_esquerda{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .campos_cadastro{
+        order: 3;
+        width: 90%;
+        height: 400px;
+    }
+    .campos_cadastro input{
+        height: 38px;
+        padding: 0 12px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        outline: 0;
+        transition: .2s;
+        margin-top: 20px;
+    }
+    .campos_cadastro input:focus{
+        border-color: #399E5A;
+    }
+    .nome{
+        width:90% !important;
+    }
+    .snome{
+        width:90% !important;
+    }
+    .user{
+        width: 50% !important;
+    
+    }
+    .senha{
+        width: 39% !important;
+        margin: 2px;
+    }
+    .tel{
+        width: 15% !important;
+    }
+    .regiao{
+        width: 10% !important;
+        margin: 8px;
+    }
+    .telefone{
+        width: 48% !important;
+    }
+    .cadastro h1{
+        text-align: center;
+        order: 1;
+        width: 100%;
+        font-size: 26px;
+    }
+    .cadastro h3{
+        width: 35%;
+        height: 38px;
+        position: relative;
+        top: 10%;
+        font-size: 16px;
+        text-decoration: none;
+        font-style: none;
+        margin: 3px;
+    }
+    .aviso{
+        width: 95%;
+        font-size: 12px;
+        text-decoration: none;
+        font-style: none;
+        margin: 4px;
+        text-align: left;   
+    }
+    .bt_cadastrar{
+        width: 39%;
+        height: 40px;
+        background-color: #399E5A;
+        color: white;
+        border-radius: 3px;
+        order: 4;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .bt_cadastrar h3{
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .bt_login_cad{
+        width: 40%;
+        height: 42px;
+        color: #399E5A;
+        border-radius: 3px;
+        order: 4;
+        cursor: pointer;
+    }
+    .bt_login_cad h3{
+        width: 100%;
+        font-size: 12px;
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
+}
